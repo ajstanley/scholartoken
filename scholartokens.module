@@ -45,7 +45,7 @@ function scholartokens_tokens($type, $tokens, array $data, array $options, Bubbl
       switch ($name) {
         case 'scholar_author':
           $allowed = ['relators:aut', 'relators:cre'];
-          $replacement = scholartokens_get_term_with_rel_type($data['node'], 'field_linked_agent', $allowed, TRUE);
+          $replacement = scholartokens_get_term_with_rel_type($data['node'], 'field_contributors', $allowed, TRUE);
           $replacements[$original] = $replacement;
           break;
       }
